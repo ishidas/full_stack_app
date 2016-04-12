@@ -10,7 +10,7 @@
       <a data-ng-click=""></a>
       <a ></a>
     </nav>
-    <section data-ng-controller="ContinentCtrl as conts">
+    <section id="continent" data-ng-controller="ContinentCtrl as conts">
       <form data-ng-submit="conts.createContinents(conts.newConts)">
         <label>Country:</label>
           <p data-ng-bind="conts.newConts.country"></p>
@@ -60,7 +60,7 @@
         <button type="submit">Get All Continents Data</button>
       </form>
     </section><br>
-    <section data-ng-controller="gemsController as gems">
+    <section id="gem" data-ng-controller="gemsController as gems">
       <form data-ng-submit="gems.createGems(gems.newGem)" novalidate="">
         <label>Name:</label>
           <p data-ng-bind="gems.newGem.name"></p>
